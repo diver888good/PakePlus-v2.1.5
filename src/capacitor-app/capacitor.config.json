@@ -1,0 +1,14 @@
+{
+  "appId": "com.example.capacitordemo",
+  "appName": "Capacitor Demo",
+  "webDir": "dist",
+  "plugins": {
+    "Wechat": {
+      "apiVersion": 1,
+      "wechatScheme": "your_wechat_app_id"
+    },
+    "Alipay": {
+      "alipayScheme": "your_alipay_app_id"
+    }
+  }
+}
