@@ -1,0 +1,66 @@
+{
+  "name": "li-shang-wang-lai-electron-app",
+  "version": "1.0.0",
+  "description": "凉山非物质文化遗产手工饼与礼尚往来平台综合文档桌面应用",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder --dir",
+    "dist": "electron-builder",
+    "pack": "electron-builder --dir",
+    "taro-build": "echo 'Taro build would happen here if dependencies were installed'"
+  },
+  "keywords": [
+    "electron",
+    "desktop-app",
+    "markdown-viewer",
+    "cultural-heritage",
+    "e-commerce-platform"
+  ],
+  "author": "Digital Cultural Heritage App",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs-extra": "^11.2.0",
+    "markdown-it": "^14.0.0",
+    "openai": "^4.0.0"
+  },
+  "build": {
+    "appId": "com.cultural.heritage.app",
+    "productName": "非遗文化传承与电商平台综合文档",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.png"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
+  }
+}
