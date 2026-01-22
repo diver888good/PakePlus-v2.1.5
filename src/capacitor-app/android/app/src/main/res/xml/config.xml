@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <access origin="*" />
+  
+  <feature name="AliPay">
+    <param name="android-package" value="wang.imchao.plugin.alipay.AliPayPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="Wechat">
+    <param name="android-package" value="xu.li.cordova.wechat.Wechat"/>
+  </feature>
+
+  
+</widget>
